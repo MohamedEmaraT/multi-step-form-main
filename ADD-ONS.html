@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD-ONS</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="all-countant">
+        <nav>
+          <img src="images/bg-sidebar-desktop.svg" alt="backGround" />
+          <div class="conta">
+            <ul>
+              <span class="">1</span>
+              <p>STEP 1</p>
+              <li>YOUR INFO</li>
+            </ul>
+            <ul>
+              <span>2</span>
+              <p>STEP 2</p>
+              <li>SELECT PLAN</li>
+            </ul>
+            <ul>
+              <span class="activ">3</span>
+              <p>STEP 3</p>
+              <li>ADD-ONS</li>
+            </ul>
+            <ul>
+              <span>4</span>
+              <p>STEP 4</p>
+              <li>SUMMARY</li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <div id="box2">
+            <h2>pick add-ons</h2>
+            <p>add-ons help enhance your gaming experience.</p>
+            <div class="theBigest">
+              <input type="checkbox" class="myCheckbox" />
+              <div class="theSmallerbox">
+                <div class="smallest">
+                  <span>Online service</span>
+                  <p>Access to multiplayer games</p>
+                </div>
+              </div>
+              <span class="theeprice">+$1/mo</span>
+            </div>
+            <br />
+            <div class="theBigest">
+              <input type="checkbox" class="myCheckbox" />
+              <div class="theSmallerbox">
+                <div class="smallest">
+                  <span>Larger storage</span>
+                  <p>Extra 1TB of cloud save</p>
+                </div>
+              </div>
+              <span class="theeprice">+$2/mo</span>
+            </div>
+            <br />
+            <div class="theBigest">
+              <input type="checkbox" class="myCheckbox" />
+              <div class="theSmallerbox">
+                <div class="smallest">
+                  <span>Customizable profile</span>
+                  <p>Custom theme on your profile</p>
+                </div>
+              </div>
+              <span class="theeprice">+$2/mo</span>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <button onclick="moveon()" class="theBtnnn" id="btn3" type="submit">
+            <a>Next step</a>
+          </button>
+          <button onclick="moveBack()" id="backBtn"><a>Go Back</a></button>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      function moveon() {
+        location.pathname = "SUMMARY.html";
+      }
+      function moveBack() {
+        location.pathname = "SELECT PLAN.html";
+      }
+    </script>
+  </body>
+</html>

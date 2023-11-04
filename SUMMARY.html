@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUMMARY</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/page4.js" defer></script>
+    <style>
+      .finshUp {
+        width: 100%;
+      }
+      hr {
+        margin-inline: auto;
+        border-color: hsl(231deg 100% 99% / 33%);
+      }
+      .yearly-monthly {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: hsl(213, 96%, 18%);
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      #box2 a {
+        margin-bottom: 8px;
+      }
+      .changey {
+        text-decoration: underline;
+        color: hsl(231, 11%, 63%);
+        font-size: 15px;
+      }
+      #one,
+      #two,
+      #three,
+      .total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      #one p,
+      #two p,
+      #three p {
+        margin: 0 !important;
+      }
+      #one span,
+      #two span,
+      #three span {
+        color: hsl(213, 96%, 18%);
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .finshUp {
+        background-color: hsl(231, 100%, 99%);
+        padding: 25px 18px 15px 18px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+      }
+      .total p {
+        margin: 0 0 0 18px !important;
+      }
+      .total span {
+        color: hsl(243, 100%, 62%);
+        font-weight: bold;
+        margin-right: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="all-countant">
+        <nav>
+          <img src="images/bg-sidebar-desktop.svg" alt="backGround" />
+          <div class="conta">
+            <ul>
+              <span>1</span>
+              <p>STEP 1</p>
+              <li>YOUR INFO</li>
+            </ul>
+            <ul>
+              <span>2</span>
+              <p>STEP 2</p>
+              <li>SELECT PLAN</li>
+            </ul>
+            <ul>
+              <span>3</span>
+              <p>STEP 3</p>
+              <li>ADD-ONS</li>
+            </ul>
+            <ul>
+              <span class="activ">4</span>
+              <p>STEP 4</p>
+              <li>SUMMARY</li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <div id="box2"></div>
+        </main>
+        <footer>
+          <button class="theBtnnn" id="btn4" type="submit">
+            <a href="#">Confirm</a>
+          </button>
+          <button onclick="moveBack()" id="backBtn">
+            <a>Go Back</a>
+          </button>
+        </footer>
+      </div>
+    </div>
+    <script>
+      function moveBack() {
+        location.pathname = "ADD-ONS.html";
+      }
+    </script>
+  </body>
+</html>

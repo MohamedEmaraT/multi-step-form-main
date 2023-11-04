@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multi-step-form-main</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="all-countant">
+        <nav>
+          <img src="images/bg-sidebar-desktop.svg" alt="backGround" />
+          <div class="conta">
+            <ul>
+              <span class="activ">1</span>
+              <p>STEP 1</p>
+              <li>YOUR INFO</li>
+            </ul>
+            <ul>
+              <span>2</span>
+              <p>STEP 2</p>
+              <li>SELECT PLAN</li>
+            </ul>
+            <ul>
+              <span>3</span>
+              <p>STEP 3</p>
+              <li>ADD-ONS</li>
+            </ul>
+            <ul>
+              <span>4</span>
+              <p>STEP 4</p>
+              <li>SUMMARY</li>
+            </ul>
+          </div>
+        </nav>
+        <main>
+          <div id="box2">
+            <h2>Personal info</h2>
+            <p>please provid your name,email address,and phone number.</p>
+            <!-- <form action="#" method="post"> -->
+            <div class="formm" id="form">
+              <label class="theLabel" for="name"
+                >Name <span>This field is required</span></label
+              >
+              <input
+                onkeyup="theChek(this.id)"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. stephen king"
+                required
+              /><br /><br />
+
+              <label for="email" class="theLabel"
+                >Email address <span>This field is required</span></label
+              >
+              <input
+                onkeyup="theChek(this.id)"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g.stephenking@lorem.com"
+                required
+              /><br /><br />
+
+              <label for="phone" class="theLabel"
+                >Phone Number <span>This field is required</span></label
+              >
+              <input
+                onkeyup="theChek(this.id)"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g +1234 567 890"
+                required
+              /><br /><br />
+            </div>
+            <!-- </form> -->
+          </div>
+        </main>
+        <footer>
+          <button class="theBtnnn" id="btn" type="submit">
+            <a href="SELECT PLAN.html">Next step</a>
+          </button>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
